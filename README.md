@@ -31,7 +31,7 @@ Feel free to download and customize to your liking.
 version | detail | solved
 :------------: | :-------------: | :-------------:
 v0.5  | 'Next' 'Prev' load error  | ✅
-v1.5  | 'Next' jumps to 2nd page<br>if clicked on home page | ❌
+v1.5  | 'Next' jumps to 2nd page<br>if clicked on home page | ✅
 ### v0.5 fix
 ```js
 methods:{
