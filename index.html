@@ -11,10 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- google fonts Permanent Marker Designed by Font Diner -->
+    <!-- google fonts Libre Barcode 39 Designed by Lasse Fister -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
     <style>
         body{
             background-color: #eee2dc;
@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <!-- Vue 實例的掛載點 -->
+    <!-- Vue 掛載點 -->
     <div id="app" class="container justify-content-center">
         <div class="row mt-4 justify-content-center">
             <img src="box_icon.png" alt="icon" width='100px' class='mr-2'>
@@ -58,18 +58,17 @@
                 v-show='item==cat.num' 
                 v-bind:class="cat.bgType"
                 v-bind:style='mainPart'>
-                <!-- content in external file  -->
-                <!-- 內容寫在外部html檔案 -->
                 <div id='loadPage'>
-
+                    <!-- content in external file  -->
+                    <!-- 內容寫在外部html檔案 -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Vue 的cdn -->
+    <!-- Vue CDN -->
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <!-- Vue實例的程式碼 -->
+    <!-- Vue Instance -->
     <script>
         new Vue({
             el: '#app',
