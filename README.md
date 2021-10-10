@@ -25,8 +25,8 @@ setPageContent(...){
 }
 ```
 Homepage will **NOT** be shown again after switching to other pages,<br>
-refreshing the page brings you back to homepage.
-
+refreshing the page brings you back to homepage.<br>
+Feel free to download and customize to your liking.
 
 version | detail | solved
 :------------: | :-------------: | :-------------:
@@ -51,6 +51,7 @@ methods:{
 * jquery ajax
 * bootstrap v4.1
 * vue.js
+
 ## License
 
 [MIT License](https://oss.ninja/mit/0x66you) © Yeh,Chun-Chen
