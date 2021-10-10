@@ -5,7 +5,7 @@
 <p align="center"><img src="https://i.postimg.cc/WpJVCQKQ/LIST-UM-2.png" width="860" alt="workerize"></p>
 
 ## About project
-Essays are written in external files, and loaded in when called.
+Essays are written in external files, and loaded in when called.(See EssayFolder)
 ```js
 setPageContent(...){
     ...
@@ -23,6 +23,9 @@ setPageContent(...){
     );
 }
 ```
+Homepage will NOT be shown again after switching to other pages,
+refreshing the page brings you back to homepage.
+
 
 version | detail | solved
 :------------: | :-------------: | :-------------:
