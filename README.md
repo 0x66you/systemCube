@@ -23,7 +23,7 @@ setPageContent(...){
     );
 }
 ```
-Homepage will NOT be shown again after switching to other pages,
+Homepage will NOT be shown again after switching to other pages,<br>
 refreshing the page brings you back to homepage.
 
 
