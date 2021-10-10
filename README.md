@@ -5,11 +5,29 @@
 <p align="center"><img src="https://i.postimg.cc/WpJVCQKQ/LIST-UM-2.png" width="860" alt="workerize"></p>
 
 ## About project
+Essays are written in external files, and loaded in when called.
+```js
+setPageContent(...){
+    ...
+    $.ajax(
+        {
+            ...
+            success: function(data){
+                console.log(`[success] loaded ${instance_id}..`);
+                $(`#${instance_id}`).load(external_url);
+            },
+            error: function(xhr){
+                console.log(`[failed] unable to load essay1{xhr.status}`)
+            }
+        }
+    );
+}
+```
 
-version | detail and fixes
-:------------: | :-------------:
-v0.5  | load error with 'Next' 'Prev'
-v1.5  | 'Next' jumps to 2nd page<br>when on home page
+version | detail | solved
+:------------: | :-------------: | :-------------:
+v0.5  | 'Next' 'Prev' load error  | ✅
+v1.5  | 'Next' jumps to 2nd page<br>if clicked on home page | ❌
 ### v0.5 fix
 ```js
 methods:{
@@ -24,7 +42,11 @@ methods:{
         this.setPageContent(num,this.catalogue[num-1].url,this.catalogue[num-1].id)
     }
 ```
-
+## Prerequisites
+* Html Css (duh!)
+* jquery ajax
+* bootstrap v4.1
+* vue.js
 ## License
 
 [MIT License](https://oss.ninja/mit/0x66you) © Yeh,Chun-Chen
