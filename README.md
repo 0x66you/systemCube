@@ -7,9 +7,9 @@
 ## About project
 version | detail and fixes
 ------------ | -------------
-v0.5 before release | load error with Next Prev
-Content in the first column | Content in the second column
-### v0.5 solved
+v0.5 before release | load error with 'Next' 'Prev'
+v1.5 release version | 'Next' jumps to 2nd page<br>when on home page
+### v0.5 fix
 ```js
 methods:{
     itemPrevious(){
