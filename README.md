@@ -6,6 +6,7 @@
 
 ## About project
 Essays are written in external files, **asynchronously loaded in when called**.<br>
+As a result, user may experience lag the first time opening it.<br>
 Random text generated with [Lorem Ipsum](https://www.lipsum.com).
 ```js
 setPageContent(...){
@@ -45,6 +46,25 @@ methods:{
         num = this.item;
         this.setPageContent(num,this.catalogue[num-1].url,this.catalogue[num-1].id)
     }
+```
+### v1.5 fix
+```js
+data:{
+...
+    counter:0 
+},
+methods:{
+...
+    itemNext(){
+        // first time loading homepage starts at zero
+        if (this.counter==0){ 
+            this.item=0;
+        }
+...
+        this.counter++; // addes to counter after first time
+    },
+...
+
 ```
 ## Prerequisites
 * Html Css (duh!)
