@@ -5,7 +5,8 @@
 <p align="center"><img src="https://i.postimg.cc/WpJVCQKQ/LIST-UM-2.png" width="860" alt="workerize"></p>
 
 ## About project
-Essays are written in external files, and loaded in when called.(See EssayFolder)
+Essays are written in external files, **asynchronously loaded in when called**.<br>
+Random text generated with [Lorem Ipsum](https://www.lipsum.com).
 ```js
 setPageContent(...){
     ...
@@ -23,7 +24,7 @@ setPageContent(...){
     );
 }
 ```
-Homepage will NOT be shown again after switching to other pages,<br>
+Homepage will **NOT** be shown again after switching to other pages,<br>
 refreshing the page brings you back to homepage.
 
 
