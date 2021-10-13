@@ -6,7 +6,7 @@
 
 ## About project
 Essays are written in external files, **asynchronously loaded in when called**.<br>
-As a result, user may experience minor lag the first time opening it.<br>
+As a result, user may experience negligible lag the first time opening it.<br>
 Random text generated with [Lorem Ipsum](https://www.lipsum.com).
 ```js
 setPageContent(...){
